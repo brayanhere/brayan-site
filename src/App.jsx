@@ -18,9 +18,17 @@ function App() {
         <nav className="py-10 mb-12 dark:text-white flex justify-between">
           <h1 className="text-xl">Brayan</h1>
           <ul className="hidden md:flex content-start gap-10">
-            <li>About</li>
-            <li>Experience</li>
-            <li>Contact</li>
+            <li>
+              <a href="#about_section">About</a>
+            </li>
+            <li>
+              <a href="#experience_section">Experience</a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.linkedin.com/in/brayanhere/">
+                Contact
+              </a>
+            </li>
           </ul>
           {/* <ul className="flex items-center">
             <li>
@@ -42,10 +50,14 @@ function App() {
           </div> */}
           <ul className="flex gap-10">
             <li>
-              <AiFillLinkedin className=" cursor-pointer text-2xl" />
+              <a target="_blank" href="https://www.linkedin.com/in/brayanhere/">
+                <AiFillLinkedin className=" cursor-pointer text-2xl" />
+              </a>
             </li>
             <li>
-              <AiFillGithub className=" cursor-pointer text-2xl" />
+              <a target="_blank" href="https://github.com/brayanhere">
+                <AiFillGithub className=" cursor-pointer text-2xl" />
+              </a>
             </li>
             <li>
               <AiFillMessage className=" cursor-pointer text-2xl" />
@@ -69,64 +81,70 @@ function App() {
             navigating the dynamic landscape of data analytics, transforming
             complexity into actionable strategies for the future.
           </p>
-          <button className="border-2 border-teal-600 px-20 py-5 text-lime-50 flex gap-2 mx-auto">
-            <AiFillLinkedin className=" text-2xl" />
-            <p>Say hi!</p>
-          </button>
+          <a target="_blank" href="https://www.linkedin.com/in/brayanhere/">
+            <button className="border-2 border-teal-600 px-20 py-5 text-lime-50 flex gap-2 mx-auto">
+              <AiFillLinkedin className=" text-2xl" />
+              <p>Say hi!</p>
+            </button>
+          </a>
         </div>
       </section>
 
       {/* ABOUTME SECTION */}
       <section>
-        <div className="text-lime-50 w-11/12 md:w-9/12 mx-auto">
-          <h3 className="text-5xl pb-5"> / about me</h3>
-          {/* flex box for two columns under about me heading */}
-          <div className="flex text-slate-400">
-            {/* first column for about me */}
-            <div className="grow">
-              <p className=" pb-10">
-                I am a recent computer science graduate, currently searching for
-                entry level or graduate job in data and tech related roles.
-                Meanawhile I am continuosly learning as technology rapidly
-                growing everday.
-              </p>
-              <p className=" pb-6">
-                Some of the technologies I am learning and working with
-              </p>
-              <div className=" flex gap-10">
-                <ul>
-                  <li>Javascript</li>
-                  <li>Python</li>
-                  <li>Reactjs</li>
-                </ul>
-                <ul>
-                  <li>Pandas</li>
-                  <li>Scikit Learn</li>
-                  <li>Matplotlib</li>
-                </ul>
-                <ul>
-                  <li>AWS</li>
-                  <li>CI/CD</li>
-                  <li>Tableau</li>
-                </ul>
+        <a id="about_section">
+          <div className="text-lime-50 w-11/12 md:w-9/12 mx-auto">
+            <h3 className="text-5xl pb-5"> / about me</h3>
+            {/* flex box for two columns under about me heading */}
+            <div className="flex text-slate-400">
+              {/* first column for about me */}
+              <div className="grow">
+                <p className=" pb-10">
+                  I am a recent computer science graduate, currently searching
+                  for entry level or graduate job in data and tech related
+                  roles. Meanawhile I am continuosly learning as technology
+                  rapidly growing everday.
+                </p>
+                <p className=" pb-6">
+                  Some of the technologies I am learning and working with
+                </p>
+                <div className=" flex gap-10">
+                  <ul>
+                    <li>Javascript</li>
+                    <li>Python</li>
+                    <li>Reactjs</li>
+                  </ul>
+                  <ul>
+                    <li>Pandas</li>
+                    <li>Scikit Learn</li>
+                    <li>Matplotlib</li>
+                  </ul>
+                  <ul>
+                    <li>AWS</li>
+                    <li>CI/CD</li>
+                    <li>Tableau</li>
+                  </ul>
+                </div>
+                <p className=" py-4">
+                  Beyond work, I enjoy staying abreast of scientific
+                  advancements. Additionally, I engage in fitness activities and
+                  find pleasure in preparing nutritious meals.
+                </p>
               </div>
-              <p className=" py-4">
-                Beyond work, I enjoy staying abreast of scientific advancements.
-                Additionally, I engage in fitness activities and find pleasure
-                in preparing nutritious meals.
-              </p>
+              {/* second column with picture */}
+              <div className="max-w-72 hidden md:flex">
+                <img src={imagess} />
+              </div>
             </div>
-            {/* second column with picture */}
-            <div className="max-w-72 hidden md:flex">
-              <img src={imagess} />
-            </div>
+            {/* projects section from here */}
+            <a id="experience_section">
+              <div className=" mt-40">
+                <h1 className=" text-5xl">/ projects and experiences </h1>
+                <Projects />
+              </div>
+            </a>
           </div>
-          {/* projects section from here */}
-          <div className=" mt-40">
-            <h1 className=" text-5xl">/ projects and experiences </h1>
-            <Projects />
-          </div>
-        </div>
+        </a>
       </section>
       <section>
         <div className=" text-center py-60 text-slate-500">
