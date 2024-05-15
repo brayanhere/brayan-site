@@ -11,11 +11,11 @@ import Projects from "./components/projects";
 
 function App() {
   return (
-    <main className=" bg-gray-900 px-10 dark:bg-gray-900 text-xl md:px-20 lg:px-96 ">
+    <main className=" bg-white px-10 dark:bg-gray-900 text-xl md:px-20 lg:px-96 ">
       {/* TOP MENU AND HERO PAGE PART */}
 
       <section className="min-h-screen">
-        <nav className="py-10 mb-12 dark:text-white flex justify-between">
+        <nav className="py-10 mb-12 text-white dark:text-white flex justify-between">
           <h1 className="text-xl">Brayan</h1>
           <ul className="hidden md:flex content-start gap-10">
             <li>
@@ -71,10 +71,10 @@ function App() {
           <h2 className="text-5xl py-2 text-teal-600 font-medium">
             hi, Brayan here.
           </h2>
-          <h3 className="text-2xl py-2 dark:text-white md:text-3xl">
+          <h3 className="text-2xl py-2 text-white dark:text-white md:text-3xl">
             Tech Graduate
           </h3>
-          <p className="text-md py-5 leading-8 text-gray-800 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
+          <p className="text-md py-5 leading-8 text-gray-200 dark:text-gray-200 max-w-2xl mx-auto md:text-xl">
             I'm a graduate tech student from Newcastle Upon Tyne, United
             Kingdom. Fascinated by big data and emerging tech, I am driven to
             unlock insights and pioneer innovative solutions. My passion lies in
