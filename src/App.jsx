@@ -11,7 +11,7 @@ import Projects from "./components/projects";
 
 function App() {
   return (
-    <main className=" bg-white px-10 dark:bg-gray-900 text-xl md:px-20 lg:px-96 ">
+    <main className=" bg-gray-900 px-10 dark:bg-gray-900 text-xl md:px-20 lg:px-96 ">
       {/* TOP MENU AND HERO PAGE PART */}
 
       <section className="min-h-screen">
